@@ -1,14 +1,32 @@
 <!DOCTYPE html>
 <html lang="en" >
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Miriam+Libre');
 
+    body {
+        margin: 0 auto;
+        padding: 20px;
+        font-family: 'Miriam Libre', sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        color: #777;
+        background-color: #111;
+    }
+</style>
 <head>
     <meta charset="UTF-8">
     <title>xbeat Interface</title>
-    <link rel="stylesheet" href="css/style.css">    
+    <link rel="stylesheet" href="css/scoreboard.css">
+    <link rel="stylesheet" href="css/skill.css">    
 </head>
 
 <body>
-
+    <div id="scoreboard" class="scoreboard">
+        <div class="left"> TEAM RED</div>
+        <div class="center"></div>
+        <div class="centerTime"></div>
+        <div class="right"> TEAM BLUE </div>
+    </div>
     <div id="skill" class="skill">
         <div id="cross-close" class="cross-close">&larr;</div>
         <div class="skill-wrapp lost">
