@@ -8,21 +8,6 @@
     flex: 0 0 100%;
 }
 
-.centerTime {
-    background-color: rgba( 38, 38, 38, 1 );
-    border-radius: 5px;
-    display: flex;
-    width: 150px;    
-    height: 150px;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    position:absolute;
-    left:50%;
-    margin-left:-75px;
-    margin-top:-25px;
-}
-
 .center {
     background-color: rgba( 78, 78, 78, 0.6 );
     border-radius: 5px;

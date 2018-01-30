@@ -17,13 +17,13 @@
     <meta charset="UTF-8">
     <title>xbeat Interface</title>
     <link rel="stylesheet" href="css/scoreboard.css">
-    <link rel="stylesheet" href="css/skill.css">    
+    <link rel="stylesheet" href="css/skill.css">
+    <link rel="stylesheet" href="css/timer.css">
 </head>
 
 <body>
     <div id="scoreboardTimer" class="scoreboardTimer">
-        <div class="center"></div>
-        <div class="centerTime"></div>
+        <div class="center"></div>  
     </div>
     <div id="playerInfo" class="playerInfo">
         <div class="greenbar-left"></div>
@@ -116,6 +116,68 @@
             </div>
         </div>
     </div>
+
+
+
+
+<div class="scoreBoarLeftTopdContainer">
+    <div class="timer">
+        <span class="minute">00</span>:<span class="second">00</span>
+    </div>
+    <div class="teamAContainer">
+        <div class="nameTeamA">INT</div>
+        <div class="colorTeamA"></div>
+    </div>
+    <div class="scoreTeamA">3</div>
+    <div class="scoreTeamB">1</div>
+    <div class="teamBContainer">
+        <div class="nameTeamB">VIL</div>
+        <div class="colorTeamB"></div>
+    </div>  
+</div>
+<div class="control">
+    <button onClick="timer.start()">Start</button> 
+    <button onClick="timer.stop()">Stop</button> 
+    <button onClick="timer.reset()">Reset</button> 
+</div>
+
+<div class="scoreBoardCenterBottomContainer">
+    <div class="leftPart">
+        <div class="scorerTeamA">Player 00</div>
+        <div class="nameCompleteTeamA">FC INTERNAZIONALE</div>
+        <div class="colorCompleteTeamA">
+            <div class="colorBarTeamA"></div>
+            <div class="colorBarTeamA"></div>
+            <div class="colorBarTeamA"></div>
+            <div class="colorBarTeamA"></div>
+            <div class="colorBarTeamA"></div>
+        </div>
+    </div>
+    <div class="centerPart">
+        <div class="leagueLogo">Premier League</div>
+        <div class="scoreContainer">
+            <div class="logoTeamA"></div>
+            <div class="scoreCenterTeamA">3</div>
+            <div class="scoreCenterTeamB">1</div>
+            <div class="logoTeamB"></div>
+        </div>
+    </div>
+    <div class="rightPart">
+        <div class="scorerTeamB">Player 11</div>
+        <div class="nameCompleteTeamB">VILLARREAL CF</div>
+        <div class="colorCompleteTeamA">
+            <div class="colorBarTeamB"></div>
+            <div class="colorBarTeamB"></div>
+            <div class="colorBarTeamB"></div>
+            <div class="colorBarTeamB"></div>
+            <div class="colorBarTeamB"></div>
+        </div>
+    </div>
+</div>
+
+
+
+
 </body>
 <script type="text/javascript" src="js/index.js"></script>
 </html>

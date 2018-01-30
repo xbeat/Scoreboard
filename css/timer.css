@@ -1,0 +1,174 @@
+/* Scoreboard Left Top */
+.scoreBoarLeftTopdContainer {
+	display: flex;
+	font-family:"Courier New", Courier, monospace;
+}
+
+.timer {
+	border:1px #666666 solid;
+	width:100px;
+	height:30px;
+	line-height:25px;
+	font-size:26px;
+	text-align:center;
+	margin:5px;
+}
+
+.teamAContainer{
+	display:flex;
+	flex-direction: column;
+}
+
+.nameTeamA{
+	height:30px;
+	width:50px;
+	display:flex;
+	justify-content: center;
+}
+
+.colorTeamA{
+	height:5px;
+	width:50px;
+	background-color:red;
+}
+
+.scoreTeamA{
+	height:30px;
+	width:25px;
+	border:1px solid red;
+	display:flex;
+	justify-content: center;
+	font-size:26px;
+}
+
+.scoreTeamB{
+	height:30px;
+	width:25px;
+	border:1px solid red;
+	display:flex;
+	justify-content: center;
+	font-size:26px;
+}
+
+.teamBContainer{
+	display:flex;
+	flex-direction: column;
+}
+
+.nameTeamB{
+	height:30px;
+	width:50px;
+	display:flex;
+	justify-content: center;
+}
+
+.colorTeamB{
+	height:5px;
+	width:50px;
+	background-color:blue;
+}
+
+/* Scoreboard Center Bottom */
+.scoreBoardCenterBottomContainer{
+	display: flex;
+	font-family:"Courier New", Courier, monospace;
+}
+
+.colorCompleteTeamA{
+	display:flex;
+}
+
+.leftPart{
+	display: flex;
+	flex-direction: column;
+}
+
+.centerPart{
+	display: flex;
+	flex-direction: column;
+}
+
+.rightrPart{
+	display: flex;
+	flex-direction: column;
+}
+
+.colorBarTeamA{
+	height:5px;
+	width:15px;
+	background-color:blue;
+}
+
+.colorBarTeamA:nth-of-type(1) {
+  background-color: lime;
+}
+.colorBarTeamA:nth-of-type(2) {
+  background-color: blue;
+}
+.colorBarTeamA:nth-of-type(3) {
+  background-color: lime;
+}
+.colorBarTeamA:nth-of-type(4) {
+  background-color: blue;
+}
+.colorBarTeamA:nth-of-type(5) {
+  background-color: red;
+}
+
+.scoreContainer{
+	height:30px;
+	width:125px;
+	display:flex;
+	justify-content: center;
+	font-size:26px;
+}
+
+.logoTeamA{
+	height:30px;
+	width:25px;
+}
+
+.logoTeamB{
+	height:30px;
+	width:25px;
+}
+
+.scoreCenterTeamA{
+	height:30px;
+	width:25px;
+	border:1px solid red;
+	display:flex;
+	justify-content: center;
+	font-size:26px;
+}
+
+.scoreCenterTeamB{
+	height:30px;
+	width:25px;
+	border:1px solid red;
+	display:flex;
+	justify-content: center;
+	font-size:26px;
+}
+
+.colorBarTeamB{
+	height:5px;
+	width:15px;
+	background-color:blue;
+}
+
+.colorBarTeamB:nth-of-type(1) {
+  background-color: lime;
+}
+.colorBarTeamB:nth-of-type(2) {
+  background-color: blue;
+}
+.colorBarTeamB:nth-of-type(3) {
+  background-color: lime;
+}
+.colorBarTeamB:nth-of-type(4) {
+  background-color: blue;
+}
+.colorBarTeamB:nth-of-type(5) {
+  background-color: red;
+}
