@@ -2,17 +2,17 @@
 <html lang="en" >
 <style>
     @import url('https://fonts.googleapis.com/css?family=Miriam+Libre');
+    @import url('https://fonts.googleapis.com/css?family=Mada');
 
     body {
         margin: 0 auto;
         padding: 20px;
-        font-family: 'Miriam Libre', sans-serif;
-        font-size: 20px;
-        font-weight: 500;
-        color: #777;
         background-color: #111;
+        background: url("../../Desktop/big.jpg") no-repeat center center fixed;
+        background-size: cover;
     }
 </style>
+
 <head>
     <meta charset="UTF-8">
     <title>xbeat Interface</title>
@@ -21,12 +21,18 @@
 </head>
 
 <body>
-    <div id="scoreboard" class="scoreboard">
-        <div class="left"> TEAM RED</div>
+    <div id="scoreboardTimer" class="scoreboardTimer">
         <div class="center"></div>
         <div class="centerTime"></div>
-        <div class="right"> TEAM BLUE </div>
     </div>
+    <div id="playerInfo" class="playerInfo">
+        <div class="greenbar-left"></div>
+        <div class="left-text">PLAYER 1 RED</div>
+        <div class="redbar-left"></div>
+        <div class="greenbar-right"></div>
+        <div class="right-text">PLAYER 8 BLUE</div>
+        <div class="redbar-right"></div>
+    </div>    
     <div id="skill" class="skill">
         <div id="cross-close" class="cross-close">&larr;</div>
         <div class="skill-wrapp lost">

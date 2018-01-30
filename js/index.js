@@ -19,6 +19,8 @@ document.getElementsByClassName( "cross-close" )[ 0 ].addEventListener( "click",
 		document.getElementById( "cross-close" ).style.left = "900px";
 	    document.getElementById( "cross-close" ).style.transition = "left .5s linear .8s";
 	    document.getElementById( "cross-close" ).style.animation = "unspin .5s linear 1.8s forwards";
+	    document.getElementById( "playerInfo" ).style.transition = "bottom .4s linear .1s";
+	    document.getElementById( "playerInfo" ).style.bottom = "150px";
 
 	} else {
 		
@@ -36,6 +38,8 @@ document.getElementsByClassName( "cross-close" )[ 0 ].addEventListener( "click",
 		document.getElementById( "cross-close" ).style.left = "5px";
 	    document.getElementById( "cross-close" ).style.transition = "left .5s linear .5s";
 	    document.getElementById( "cross-close" ).style.animation = "spin .5s linear 1.8s forwards";
+	    document.getElementById( "playerInfo" ).style.transition = "bottom .4s linear 1.2s";
+	    document.getElementById( "playerInfo" ).style.bottom = "10px";
 	};
 
 });
