@@ -57,6 +57,11 @@ function manageScoreboard(){
 	document.getElementsByClassName( "scoreboardTimer" )[ 0 ].classList.toggle( "scoreboardTimerHide" );
 };
 
+function manageStatistics(){
+	document.getElementsByClassName( "centerStat" )[ 0 ].classList.toggle( "centerStatShow" );
+	document.getElementsByClassName( "scoreBoardBigContainer" )[ 0 ].classList.toggle( "scoreBoardBigContainerUp" );
+};
+
 for( let i = 0, il = selects.length; i < il; i++ ){
 	selects[i].addEventListener( "mouseenter", function( event ) {
 	    this.style.transition = "all .3s";

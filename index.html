@@ -21,6 +21,66 @@
 </head>
 
 <body>
+    <!-- Game Stat -->
+    <div class="centerStat">
+        <div class="centerstatRow">
+            <div class="leftStat">1</div>
+            <div class="statContainer">SHOT ON GOAL</div>
+            <div class="rightStat">2</div>
+        </div>
+        <div class="centerstatRow">
+            <div class="leftStat">1</div>
+            <div class="statContainer">SHOT OFF GOAL</div>
+            <div class="rightStat">2</div>
+        </div>
+        <div class="centerstatRow">  
+            <div class="leftStat">1</div>
+            <div class="statContainer">ASSIST</div>
+            <div class="rightStat">2</div>
+        </div>
+        <div class="centerstatRow">  
+            <div class="leftStat">1</div>
+            <div class="statContainer">OFFSIDES</div>
+            <div class="rightStat">2</div>
+        </div>
+        <div class="centerstatRow">  
+            <div class="leftStat">1</div>
+            <div class="statContainer">LOST POSSESSION</div>
+            <div class="rightStat">2</div>
+        </div>
+        <div class="centerstatRow">  
+            <div class="leftStat">1</div>
+            <div class="statContainer">REGAINED POSSESSION</div>
+            <div class="rightStat">2</div>
+        </div>
+        <div class="centerstatRow">  
+            <div class="leftStat">1</div>
+            <div class="statContainer">CORNERS</div>
+            <div class="rightStat">2</div>
+        </div>
+        <div class="centerstatRow">  
+            <div class="leftStat">1</div>
+            <div class="statContainer">FOULS SUFFERED</div>
+            <div class="rightStat">2</div>
+        </div>
+        <div class="centerstatRow">  
+            <div class="leftStat">1</div>
+            <div class="statContainer">YELLOW CARDS</div>
+            <div class="rightStat">2</div>
+        </div>
+        <div class="centerstatRow">  
+            <div class="leftStat">1</div>
+            <div class="statContainer">RED CARDS</div>
+            <div class="rightStat">2</div>
+        </div>
+        <div class="centerstatRow">  
+            <div class="leftStat">1</div>
+            <div class="statContainer">POSSESSION</div>
+            <div class="rightStat">2</div>   
+        </div>
+    </div>
+    
+    <!-- Scoreboard Timer -->
     <div id="scoreboardTimer" class="scoreboardTimer">
         <div class="timer">
             <span class="minute">00</span>:<span class="second">00</span>
@@ -43,6 +103,7 @@
         </div>  
     </div>
 
+    <!-- Player Info -->
     <div id="playerInfo" class="playerInfo">
         <div class="greenbar-left"></div>
         <div class="left-text">PLAYER 1 RED</div>
@@ -52,6 +113,7 @@
         <div class="redbar-right"></div>
     </div>
 
+    <!-- Skill -->
     <div id="skill" class="skill">
         <div id="cross-close" class="cross-close">&larr;</div>
         <div class="skill-wrapp lost">
@@ -136,12 +198,11 @@
         </div>
     </div>
    
+    <!-- Scoreboard central big -->
     <div class="scoreBoardBigContainer">
         <div class="scoreBoardBigTop">
             <div class="leftScorer">33' Player</div>
-            <div class="leagueContainer">
-                <div class="leagueInfo">Soccer League</div>
-            </div>
+            <div class="leagueContainer">Soccer League</div>
             <div class="rightScorer">Player 18'</div>   
         </div>
 
@@ -154,13 +215,15 @@
         </div>
     </div>
 
+    <!-- Control -->
     <div class="control">
         <button onClick="timer.start()">Start Timer</button> 
         <button onClick="timer.stop()">Stop Timer</button> 
         <button onClick="timer.reset()">Reset Timer</button>
         <button onClick="manageBigScoreboard()">toggle Big Scoreboard</button>
         <button onClick="manageScoreboard()">toggle Scoreboard</button>
-        <button onClick="managePlayerInfo()">toggle Player Info</button> 
+        <button onClick="managePlayerInfo()">toggle Player Info</button>
+        <button onClick="manageStatistics()">toggle Statistics</button>
     </div>
 
 </body>
