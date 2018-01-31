@@ -44,6 +44,12 @@ document.getElementsByClassName( "cross-close" )[ 0 ].addEventListener( "click",
 
 });
 
+
+function manageBigScoreboard(){
+	console.log( document.getElementsByClassName( "scoreBoardBigContainer" )[ 0 ] );
+	document.getElementsByClassName( "scoreBoardBigContainer" )[ 0 ].classList.toggle( "scoreBoardBigContainerHide" );
+};
+
 for( let i = 0, il = selects.length; i < il; i++ ){
 	selects[i].addEventListener( "mouseenter", function( event ) {
 	    this.style.transition = "all .3s";
