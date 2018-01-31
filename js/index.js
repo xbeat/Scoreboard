@@ -45,9 +45,16 @@ document.getElementsByClassName( "cross-close" )[ 0 ].addEventListener( "click",
 });
 
 
+function managePlayerInfo(){
+	document.getElementsByClassName( "playerInfo" )[ 0 ].classList.toggle( "playerInfoHide" );
+};
+
 function manageBigScoreboard(){
-	console.log( document.getElementsByClassName( "scoreBoardBigContainer" )[ 0 ] );
 	document.getElementsByClassName( "scoreBoardBigContainer" )[ 0 ].classList.toggle( "scoreBoardBigContainerHide" );
+};
+
+function manageScoreboard(){
+	document.getElementsByClassName( "scoreboardTimer" )[ 0 ].classList.toggle( "scoreboardTimerHide" );
 };
 
 for( let i = 0, il = selects.length; i < il; i++ ){
