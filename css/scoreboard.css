@@ -32,7 +32,7 @@
 .redbar-left {
     position: absolute;
     background-color: rgb( 255, 0, 32 );
-    top: 36px;
+    top: 42px;
     width: 300px;
     height: 3px;
     z-index: 10;
@@ -43,7 +43,7 @@
 .redbar-right {
     position: absolute;
     background-color: rgb( 255, 0, 32 );
-    top: 36px;
+    top: 42px;
     width: 300px;
     height: 3px;
     z-index: 10;
@@ -57,11 +57,11 @@
     border-radius: 0px 30px 30px 0px;
     display: flex;
     width: 440px;
-    height: 18px;
+    height: 30px;
     justify-content: center;
     flex-direction: column;
     text-align: left;
-    padding: 11px 10px 10px 70px;
+    padding: 9px 10px 10px 70px;
     line-height: 28px;
     font-size: 28px;
     font-weight: 600;
@@ -75,14 +75,263 @@
     border-radius: 30px 0px 0px 30px; 
     display: flex;
     width: 440px;
-    height: 18px;
+    height: 30px;
     justify-content: center;
     flex-direction: column;
     text-align: right;
-    padding: 11px 70px 10px 10px;
+    padding: 9px 70px 10px 10px;
     line-height: 28px;    
     font-size: 28px;
     font-weight: 600;    
     color: #fff;
     right: 180px;  
+}
+
+.scoreboardTimer {
+    position: absolute;
+    top: 35px;
+    left: 155px;
+    display: flex;
+    background-color: rgba( 38, 38, 38, 0.8 );
+    border-radius: 5px;
+    display: flex;
+    width: 600px;    
+    height: 65px;
+    font-family:"Roboto";
+    color: #fff;
+    border-radius: 5px;
+}
+
+.timer {
+    position: absolute;
+    top: 10px;
+    left: 75px;
+    font-size: 35px;
+}
+
+.teamAContainer{
+    position: absolute;
+    top: 5px;
+    font-size: 35px;
+    left: 190px;
+    display:flex;
+    flex-direction: column;
+}
+
+.nameTeamA{
+    position: absolute;
+    left: 30px;
+    height: 30px;
+    width: 50px;
+    display: flex;
+    color: #669999;
+}
+
+.colorTeamA{
+    position: absolute;
+    top: 45px;
+    display: flex;
+}
+
+.colorTeamAbar1{
+    height: 7px;
+    width: 62px;
+    background-color: red;
+}
+
+.colorTeamAbar2{
+    height: 7px;
+    width: 62px;
+    background-color: blue;
+}
+
+.scoreTeamA{
+    position: absolute;
+    padding-top: 10px;
+    left: 320px;
+    height: 50px;
+    width: 65px;
+    border: 2px solid #669999;
+    border-radius: 5px;
+    display:flex;
+    justify-content: center;
+    font-size: 35px;
+}
+
+.scoreTeamB{
+    position: absolute;
+    padding-top: 10px;
+    left: 390px;
+    height: 50px;
+    width: 65px;
+    border: 2px solid #669999;
+    border-radius: 5px;
+    display:flex;
+    justify-content: center;
+    font-size: 35px;
+}
+
+.teamBContainer{
+    position: absolute;
+    top: 5px;
+    font-size: 35px;
+    left: 465px;
+    display:flex;
+    flex-direction: column;
+}
+
+.nameTeamB{
+    position: absolute;
+    left: 30px;
+    height: 30px;
+    width: 50px;
+    display: flex;
+    color: #669999;
+}
+
+.colorTeamB{
+    position: absolute;
+    top: 45px;
+    display: flex;
+}
+
+.colorTeamBbar1{
+    height: 7px;
+    width: 62px;
+    background-color: red;
+}
+
+.colorTeamBbar2{
+    height: 7px;
+    width: 62px;
+    background-color: white;
+}
+
+.scoreBoardBigContainer{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    width: 100%;
+    bottom: 270px;
+}
+
+.scoreBoardBig{
+    position: absolute;
+    display: flex;
+    font-family: "Roboto";
+    font-size: 35px;
+    align-items: center;
+    justify-content: center;
+    align-items: center;  
+    width: 1200px;
+    height: 100px;
+    border-radius: 5px;
+    background-color: rgba( 38, 38, 38, 0.8 );
+    color: #fff;
+}
+
+.colorCompleteTeamA{
+    display:flex;
+}
+
+.leftPart{
+    display: flex;
+    flex-direction: column;
+}
+
+.centerPart{
+    display: flex;
+    flex-direction: column;
+}
+
+.rightrPart{
+    display: flex;
+    flex-direction: column;
+}
+
+.colorBarTeamA{
+    height:5px;
+    width:15px;
+    background-color:blue;
+}
+
+.colorBarTeamA:nth-of-type(1) {
+    background-color: lime;
+}
+.colorBarTeamA:nth-of-type(2) {
+    background-color: blue;
+}
+.colorBarTeamA:nth-of-type(3) {
+    background-color: lime;
+}
+.colorBarTeamA:nth-of-type(4) {
+    background-color: blue;
+}
+.colorBarTeamA:nth-of-type(5) {
+    background-color: red;
+}
+
+.scoreContainer{
+    height:30px;
+    width:125px;
+    display:flex;
+    justify-content: center;
+    font-size:26px;
+}
+
+.logoTeamA{
+    height:30px;
+    width:25px;
+}
+
+.logoTeamB{
+    height:30px;
+    width:25px;
+}
+
+.scoreCenterTeamA{
+    height:30px;
+    width:25px;
+    border:1px solid red;
+    display:flex;
+    justify-content: center;
+    font-size:26px;
+}
+
+.scoreCenterTeamB{
+    height:30px;
+    width:25px;
+    border:1px solid red;
+    display:flex;
+    justify-content: center;
+    font-size:26px;
+}
+
+.colorBarTeamB{
+    height:5px;
+    width:15px;
+    background-color:blue;
+}
+
+.colorBarTeamB:nth-of-type(1) {
+    background-color: lime;
+}
+.colorBarTeamB:nth-of-type(2) {
+    background-color: blue;
+}
+.colorBarTeamB:nth-of-type(3) {
+    background-color: lime;
+}
+.colorBarTeamB:nth-of-type(4) {
+    background-color: blue;
+}
+.colorBarTeamB:nth-of-type(5) {
+    background-color: red;
+}
+
+.control{
+    position: absolute;
+    top: 100px;
+    left: 150px;
 }
