@@ -1,77 +1,128 @@
-/* Scoreboard Left Top */
-.scoreBoarLeftTopdContainer {
-	display: flex;
-	font-family:"Courier New", Courier, monospace;
+.scoreboardTimer {
+    position: absolute;
+    top: 35px;
+    left: 155px;
+    display: flex;
+    background-color: rgba( 38, 38, 38, 0.8 );
+    border-radius: 5px;
+    display: flex;
+    width: 600px;    
+    height: 55px;
+    font-family:"Roboto";
+    color: #fff;
 }
 
 .timer {
-	border:1px #666666 solid;
-	width:100px;
-	height:30px;
-	line-height:25px;
-	font-size:26px;
-	text-align:center;
-	margin:5px;
+	position: absolute;
+	top: 10px;
+	left: 75px;
+	font-size: 35px;
 }
 
 .teamAContainer{
+	position: absolute;
+	top: 5px;
+	font-size: 35px;
+	left: 190px;
 	display:flex;
 	flex-direction: column;
 }
 
 .nameTeamA{
-	height:30px;
-	width:50px;
-	display:flex;
-	justify-content: center;
+	position: absolute;
+	left: 30px;
+	height: 30px;
+	width: 50px;
+	display: flex;
+	color: #669999;
 }
 
 .colorTeamA{
-	height:5px;
-	width:50px;
-	background-color:red;
+	position: absolute;
+	top: 45px;
+	display: flex;
+}
+
+.colorTeamAbar1{
+	height: 7px;
+	width: 62px;
+	background-color: red;
+}
+
+.colorTeamAbar2{
+	height: 7px;
+	width: 62px;
+	background-color: blue;
 }
 
 .scoreTeamA{
-	height:30px;
-	width:25px;
-	border:1px solid red;
+	position: absolute;
+	padding-top: 10px;
+	left: 320px;
+	height: 50px;
+	width: 65px;
+	border: 2px solid #669999;
+	border-radius: 5px;
 	display:flex;
 	justify-content: center;
-	font-size:26px;
+	font-size: 35px;
 }
 
 .scoreTeamB{
-	height:30px;
-	width:25px;
-	border:1px solid red;
+	position: absolute;
+	padding-top: 10px;
+	left: 390px;
+	height: 50px;
+	width: 65px;
+	border: 2px solid #669999;
+	border-radius: 5px;
 	display:flex;
 	justify-content: center;
-	font-size:26px;
+	font-size: 35px;
 }
 
 .teamBContainer{
+	position: absolute;
+	top: 5px;
+	font-size: 35px;
+	left: 465px;
 	display:flex;
 	flex-direction: column;
 }
 
 .nameTeamB{
-	height:30px;
-	width:50px;
-	display:flex;
-	justify-content: center;
+	position: absolute;
+	left: 30px;
+	height: 30px;
+	width: 50px;
+	display: flex;
+	color: #669999;
 }
 
 .colorTeamB{
-	height:5px;
-	width:50px;
-	background-color:blue;
+	position: absolute;
+	top: 45px;
+	display: flex;
 }
 
-/* Scoreboard Center Bottom */
+.colorTeamBbar1{
+	height: 7px;
+	width: 62px;
+	background-color: red;
+}
+
+.colorTeamBbar2{
+	height: 7px;
+	width: 62px;
+	background-color: white;
+}
+
 .scoreBoardCenterBottomContainer{
+	position:absolute;
 	display: flex;
-	font-family:"Courier New", Courier, monospace;
+	font-family:"Roboto";
+	top:700px;
+	left:800px;
 }
 
 .colorCompleteTeamA{
@@ -171,4 +222,10 @@
 }
 .colorBarTeamB:nth-of-type(5) {
   background-color: red;
+}
+
+.control{
+	position: absolute;
+	top: 600px;
+	left: 400px;
 }

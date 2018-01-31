@@ -1,24 +1,3 @@
-.scoreboardTimer {
-    top: 20px;
-    border: 15px;
-    padding: 15px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: space-between;
-    flex: 0 0 100%;
-}
-
-.center {
-    background-color: rgba( 78, 78, 78, 0.6 );
-    border-radius: 5px;
-    display: flex;
-    width: 600px;    
-    height: 45px;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
-
 .playerInfo {
     position: absolute;
     bottom: 150px;
