@@ -5,8 +5,7 @@
     justify-content: space-between;
     flex: 0 0 100%;
     width: 100%;
-    font-family: 'Mada', sans-serif;
-    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
 }
 
 .greenbar-left {
@@ -213,121 +212,85 @@
     justify-content: center;
     align-items: center;  
     width: 100%;
-    bottom: 270px;
+    bottom: 290px;
 }
 
-.scoreBoardBig{
+.scoreBoardBigTop{
     position: absolute;
     display: flex;
     font-family: "Roboto";
-    font-size: 35px;
+    font-size: 15px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;  
-    width: 1200px;
-    height: 100px;
+    width: 400px;
+    height: 30px;
+    bottom: 43px;
     border-radius: 5px;
     background-color: rgba( 38, 38, 38, 0.8 );
     color: #fff;
 }
 
-.colorCompleteTeamA{
-    display:flex;
-}
-
-.leftPart{
+.leftScorer{
     display: flex;
-    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0px 0px 0px 10px;
 }
 
-.centerPart{
+.leagueContainer{
+    height: 20px;
+    width: 140px;
     display: flex;
-    flex-direction: column;
+    border-radius: 5px;
+    justify-content: center;
+    border: 1px solid #669999;
+    background-color: rgba( 18, 18, 18, 0.8 );
 }
 
-.rightrPart{
+.rightScorer{
     display: flex;
-    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0px 10px 0px 0px;
 }
 
-.colorBarTeamA{
-    height:5px;
-    width:15px;
-    background-color:blue;
+.scoreBoardBigBottom{
+    position: absolute;
+    display: flex;
+    font-family: "Roboto";
+    font-size: 40px;
+    justify-content: space-between;
+    width: 1200px;
+    height: 75px;
+    border-radius: 5px;
+    background-color: rgba( 38, 38, 38, 0.8 );
+    color: #fff;
+    padding: 5px 0px 0px 10px;
 }
 
-.colorBarTeamA:nth-of-type(1) {
-    background-color: lime;
-}
-.colorBarTeamA:nth-of-type(2) {
-    background-color: blue;
-}
-.colorBarTeamA:nth-of-type(3) {
-    background-color: lime;
-}
-.colorBarTeamA:nth-of-type(4) {
-    background-color: blue;
-}
-.colorBarTeamA:nth-of-type(5) {
-    background-color: red;
+.leftPartBottom{
+    padding: 10px 0px 0px 50px;
+    display: flex;
+    width: 530px;
+    justify-content: flex-start;
 }
 
-.scoreContainer{
-    height:30px;
-    width:125px;
-    display:flex;
+.scoreBottomContainer{
+    padding: 5px 0px 0px 0px;
+    height: 60px;
+    width: 135px;
+    display: flex;
+    border-radius: 5px;
     justify-content: center;
-    font-size:26px;
+    border: 2px solid #669999;
+    font-size: 50px;
+    background-color: rgba( 18, 18, 18, 0.8 );
 }
 
-.logoTeamA{
-    height:30px;
-    width:25px;
-}
-
-.logoTeamB{
-    height:30px;
-    width:25px;
-}
-
-.scoreCenterTeamA{
-    height:30px;
-    width:25px;
-    border:1px solid red;
-    display:flex;
-    justify-content: center;
-    font-size:26px;
-}
-
-.scoreCenterTeamB{
-    height:30px;
-    width:25px;
-    border:1px solid red;
-    display:flex;
-    justify-content: center;
-    font-size:26px;
-}
-
-.colorBarTeamB{
-    height:5px;
-    width:15px;
-    background-color:blue;
-}
-
-.colorBarTeamB:nth-of-type(1) {
-    background-color: lime;
-}
-.colorBarTeamB:nth-of-type(2) {
-    background-color: blue;
-}
-.colorBarTeamB:nth-of-type(3) {
-    background-color: lime;
-}
-.colorBarTeamB:nth-of-type(4) {
-    background-color: blue;
-}
-.colorBarTeamB:nth-of-type(5) {
-    background-color: red;
+.rightPartBottom{
+    padding: 10px 50px 0px 0px;
+    display: flex;
+    width: 530px;
+    justify-content: flex-end;
 }
 
 .control{
