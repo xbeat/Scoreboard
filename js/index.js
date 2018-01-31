@@ -60,6 +60,10 @@ function manageScoreboard(){
 function manageStatistics(){
 	document.getElementsByClassName( "centerStat" )[ 0 ].classList.toggle( "centerStatShow" );
 	document.getElementsByClassName( "scoreBoardBigContainer" )[ 0 ].classList.toggle( "scoreBoardBigContainerUp" );
+	document.getElementsByClassName( "scoreBoardBigTop" )[ 0 ].classList.toggle( "scoreBoardBigTopHide" );
+	if ( document.getElementsByClassName( "scoreBoardBigContainer" )[ 0 ].classList.contains("scoreBoardBigContainerHide") ){
+		document.getElementsByClassName( "scoreBoardBigContainer" )[ 0 ].classList.toggle( "scoreBoardBigContainerHide" );
+	}; 
 };
 
 for( let i = 0, il = selects.length; i < il; i++ ){
