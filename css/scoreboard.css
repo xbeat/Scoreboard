@@ -410,3 +410,7 @@
     top: 100px;
     left: 150px;
 }
+
+.canvasPitch{
+    visibility: hidden;
+}

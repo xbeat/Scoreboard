@@ -66,6 +66,10 @@ function manageStatistics(){
 	}; 
 };
 
+function managePitch(){
+	document.getElementById( "canvasPitch" ).classList.toggle( "canvasPitch" );
+};
+
 for( let i = 0, il = selects.length; i < il; i++ ){
 	selects[i].addEventListener( "mouseenter", function( event ) {
 	    this.style.transition = "all .3s";
