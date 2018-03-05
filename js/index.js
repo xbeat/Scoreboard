@@ -84,6 +84,9 @@ for( let i = 0, il = selects.length; i < il; i++ ){
     });
 };
 
+/*
+* Timer
+*/
 class Timer{
 	constructor( callback ) {
 		this.time = 5400;
@@ -146,3 +149,101 @@ document.addEventListener('DOMContentLoaded', function() {
 	);
 	timer.reset();
 });
+
+/*
+* Change skill value
+*/
+class Skill{
+	constructor(){
+
+		this.buttonContainer;
+		this.buttonSelected;		
+		this.updating = false;
+		this.skillOpen = false;
+		this.skillValue = document.getElementsByClassName( "skill-value" );
+
+		document.getElementById( "qty-subtract" ).addEventListener( "click", function() {
+			
+			this.buttonSelected.innerText = this.subtractQty( parseInt( this.buttonSelected.innerText ) );
+			this.buttonContainer.style.backgroundColor = this.getColor( parseInt ( this.buttonSelected.innerText ), 0, 20 );
+
+			this.updating = true;
+		}.bind( this ));
+
+		document.getElementById( "qty-addition" ).addEventListener( "click", function() {
+			
+			this.buttonSelected.innerText = this.addQty( parseInt( this.buttonSelected.innerText ) );
+			this.buttonContainer.style.backgroundColor = this.getColor( parseInt ( this.buttonSelected.innerText ), 0, 20 );
+			this.colorSkill = this.getColor( parseInt ( this.buttonSelected.innerText ), 0, 20 );
+			
+			this.updating = true;
+		}.bind( this ) );
+
+		for ( let i = 0; i < this.skillValue.length; i++ ){
+
+			document.getElementsByClassName( "skill-value" )[i].getElementsByTagName( "p" )[0].innerText = 10;
+			document.getElementsByClassName( "skill-wrap" )[i].addEventListener( "click", function( event ) {
+				
+				this.buttonContainer = event.currentTarget;
+				this.buttonSelected = event.currentTarget.getElementsByTagName( "p" )[0];
+
+				if ( this.skillOpen == false ){
+					this.skillOpen = true;
+				} else {
+					return;
+				};
+
+				document.getElementById( "skill-change-value-container" ).style.opacity = 1;
+
+				var outoClose = setInterval( function(){ 
+					if ( this.updating == false ){
+						document.getElementById( "skill-change-value-container" ).style.opacity = 0;
+						clearInterval( outoClose );
+						this.skillOpen = false;
+					} else {
+						this.updating = false;
+					};
+				}.bind( this ), 2000 );
+
+			}.bind( this ) );
+
+		};
+
+	};
+   
+	addQty( val ) {
+		if( isNaN( val ) ) {
+			return 20;
+		} else {
+			if ( val < 20 ){
+				return val+1;
+			} else {
+				return val;
+			};
+		};
+
+	};
+
+	subtractQty( val ) {
+		if( isNaN( val ) ) {
+			return 0;
+		} else {  
+			if( val > 0 && val <= 20 ) {
+				return val-1;
+			} else {
+				return val;
+			};
+		};
+
+	};
+
+	getColor( value, min, max ){
+	    if ( value > max ) value = max;
+	    	var v = ( value - min) / ( max - min );
+	    	var hue = ( ( 1 - v )* 120 ).toString( 10 );
+	    return [ "hsl(", hue, ", 100%, 50% )" ].join( "" );
+	};
+
+};
+
+let skill = new Skill();
