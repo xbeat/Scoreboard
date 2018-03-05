@@ -1,5 +1,5 @@
 
-var selects = document.getElementsByClassName( "skill-wrapp" );
+var selects = document.getElementsByClassName( "skill-wrap" );
 
 document.getElementsByClassName( "cross-close" )[ 0 ].addEventListener( "click", function(){
 
